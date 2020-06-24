@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>OUVERTURE COMPTE</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+               <img src="logobp.png"/>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Ouverture Compte</a></li>
+                <li><a href="fermeture.html">Fermeture Compte</a></li>
+                <li><a href="gestioncomptes.html">Gestionnaire de Comptes</a></li>
+            </ul>
+        </nav>
+        
+            <form name="ouvertureCompte" action="" method="" onsubmit="returnVerification()">
+                <h1>OUVERTURE COMPTE</h1>
+                <fieldset class="container">
+                    <legend>Informations client</legend>
+                       <!--label>Type de client </label-->
+                           <select id="type">
+                                <option value="type de client" selected>Type de client</option>
+                                <option value="1">Physique</option>
+                                <option value="2">Moral</option>
+                           </select></br>    
+                           <input type="text" id="lname" name="nom" placeholder="Nom" class="texte" required>
+                           <input type="text" id="fname" name="prenom" placeholder="Prénom" class="texte" required></br>
+                           <input type="text" id="Adress" name="Adresse" placeholder="Adresse" class="texte" required></br>
+                           <input type="tel" id="phone" name="telephone" placeholder="Numéro de téléphone" class="texte" required></br>
+                           <input type="text" id="cin" name="identite" placeholder="N° Carte d'identité"></br>
+                           <input type="email" id="mail" name="email" placeholder="Adresse email"> 
+                </fieldset>
+           
+                <fieldset class="container">
+                    <legend>Informations professionnelles client</legend>
+                        <label>Salarié</label>
+                            <input type="radio" value="" class="stt" name="statutpro">OUI
+                            <input type="radio" value="" class="stt" name="statutpro">NON</br>   
+                            <input type="text" id="salaire" name="montant_salaire" placeholder="Montant du Salaire"></br>  
+                            <input type="text" id="nameProf" name="name_prof" placeholder="Profession/Activité"></br>
+                            <input type="text" id="nameEnt" name="name_ent" placeholder="Nom de l'entreprise"></br>
+                            <input type="text" id="adressEnt" name="Adress_ent" placeholder="Adresse de l'entreprise"></br>
+                            
+                            <input type="text" id="statutj" name="statut_juridique" placeholder="Statut juridique"></br>
+                            <input type="text" id="Nregistre" name="numeroregistre" placeholder="N° de régistre"></br>
+                            <input type="text" id="Dactivite" name="activite" placeholder="Domaine d'activité" ></br>
+                </fieldset>
+        
+                <fieldset class="container">
+                    <legend>Informations comptes client</legend>
+                        <!--label>Type de compte</label-->
+                            <select id="typeCompte">
+                                <option value="Type de compte" selected>Type de compte</option>
+                                <option value="courant" >courant</option>
+                                <option value="epargne">épargne</option>
+                                <option value="bloque">bloqué</option>
+                            </select>
+                            <input type="text" name="durée" value="" placeholder="Durée de blocage"></br>
+                            <input type="text" id="frais" name="frais" placeholder="Frais d'ouverture"></br>
+                            <input type="text" id="nameEmp" name="name_emp" placeholder="Nom Employeur"></br>
+                            <input type="text" id="rsocial" name="raison_social" placeholder="Raison Social Employeur"></br>
+                            <input type="text" id="identifiant" name="identifiant" placeholder="ID Employeur"></br>
+                            <input type="text" id="adressEmp" name="Adress_emp" placeholder="Adresse Employeur"></br>
+                        <!--label>Etat du compte<em>*</em></label-->
+                            <select>
+                                <option value="etat du compte" selected>Etat du compte</option>
+                                <option value="Actif">Actif</option>
+                                <option value="Bloqué">Bloqué</option>
+                            </select></br>
+                        <label>Date d'ouverture<em>*</em></label>
+                        <input type="date" id="" name="" value="" min="" max=""></br> 
+                        <label class="sms"><input type="checkbox" class="sms name="SMS">Recevoir un SMS pour chaque opération sur votre compte </label>   
+                </fieldset>
+                <div>
+                    <input type="submit" class="bouton" id="boutonsave" value="Enregistrer" onclick="">
+                    <input type="reset" class="bouton" value="Annuler">
+                </div>
+            </form>
+
+        <script src="ouverture.js"></script>
+    </body>
+</html>
