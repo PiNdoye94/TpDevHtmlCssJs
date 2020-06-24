@@ -1,0 +1,77 @@
+header {
+    text-align: left;
+    background-color: #829FD9;
+    border-bottom: 2px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    display: inline;
+    margin: 25px;
+    font-size: 30px; 
+}
+h1,ul {
+    text-align: center;
+}
+a { 
+    text-decoration: none;
+}
+#logo {
+    margin-bottom: 0px;
+    height: 200px;
+}
+img {
+    margin-top: 35px;
+}
+form {
+    background-color: red;
+}
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #829FD9;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-size: 25px;
+}
+input,select {
+    margin: 8px;
+    width: 200px;
+    height: 25px;
+    border: 1px solid;
+}
+.stt {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    border: 1px solid;
+
+
+}
+input:focus {
+    background: #eaeaea;
+}
+input[type=submit] {
+    width: 150px;
+    padding: 10px;
+    margin: 15px;
+    height: 35px;
+}
+input[type=reset] {
+    width: 150px;
+    padding: 10px;
+    height: 35px;
+}
+div {
+   text-align: center;
+   
+}
+.sms {
+    width: 15px;
+    height: 15px;
+}
