@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Authentification</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <boby>
+        <header>
+            <div id="logo">
+               <img src="logobp.png"/>
+            </div>
+            <div id="welcome">
+                <h1>BIENVENUE DANS LA BANQUE DU PEUPLE !!</h1>
+            </div>
+        </header>
+        <div>
+            <button><a href="accueil.html">RETOUR A L'ACCUEIL</a></button>
+        </div>
+        
+        <form name="ouvertureCompte" action="" method="" onsubmit="">
+            <h1 id="ouCompte">OUVERTURE COMPTE</h1>
+            <div id="btns">
+                <input type="button" value="Nouveau Client" class="btn" id="newclient2">
+                <input type="button" value="Client Existant" class="btn" id="clientexistant2">
+            </div>
+            <div id="search2">
+                <input type="search" name="recherche client" placeholder="ID client">
+                <input type="button" name="bouton de recherche" value="Rechercher">
+              </div>
+        <div id="divform2">
+            <fieldset class="container" id="infosclient">
+                <legend>Informations client</legend>
+                    <div id="infogen">
+                       <label>Nom de l'entreprise<input type="text" id="lname" name="nom entreprise" class="texte"></label></br>
+                       <label>Adresse de l'entreprise<input type="text" id="Adress" name="Adresse entreprise class="texte"></label></br>
+                       <label>Téléphone <input type="tel" id="phone" name="telephone" class="texte"></label></br>
+                       <label>Adresse Email <input type="email" id="mail" name="email"></label></br>
+                    </div>   
+                    <div id="infoprof">
+                       <label>Type d'entreprise <input type="text" id="type_ent" name="type d'entreprise" ></label></br>  
+                       <label>N° Registre <input type="text" id="registre" name="numero registre"></label></br>
+                       <label>Domaine d'activité <input type="text" id="nameEnt" name="nom entreprise"></label></br>
+                    </div>
+            </fieldset>
+    
+            <fieldset class="container" id="infoscompte">
+                <legend>Informations comptes client</legend>
+                    <div id="infocompte">
+                        <select id="typeCompte">
+                            <option value="Type de Compte" selected>Type de Compte</option>
+                            <option value="1" >Compte Courant</option>
+                            <option value="2">Compte Epargne</option>
+                            <option value="3">Compte Bloqué</option>
+                        </select></br>
+                        <label id="dureeblocage">Durée de Blocage <input type="text" name="durée de blocage"></label></br>
+                        <label id="numCompte">N° Compte <input type="text" name="numero compte"></label></br>
+                        <label id="cleRib">Clé Rib <input type="text" name="cle rib"></label></br>
+                        <label id="numAgence"> N° Agence <input type="text" name="numero agence"></label></br>
+                        <label id="agios">Agios <input type="text" name="agios compte courant"></label></br>
+                        <label id="frais">Fais d'ouverture Compte <input type="text" name="frais d'ouverture"></label></br>
+                        <select>
+                            <option value="Etat du Compte" selected>Etat du compte</option>
+                            <option value="Actif">Actif</option>
+                            <option value="Bloqué">Bloqué</option>
+                        </select></br>
+                    </div>
+                        <label>Date d'ouverture<em>*</em><input type="date" id="" name="" value="" min="" max=""></label></br> 
+                        <label class="sms"><input type="checkbox" class="sms name="SMS">Recevoir un SMS pour chaque opération sur votre compte </label>   
+            </fieldset>
+            <div id="save">
+                <input type="submit" class="bouton" id="boutonsave" value="Enregistrer" onclick="">
+                <input type="reset" class="bouton" value="Annuler">
+            </div>
+        </div>    
+        </form>
+    <script src="clientmoral.js"></script>
+    </boby>
+</html>

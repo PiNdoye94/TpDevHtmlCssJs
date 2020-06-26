@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Authentification</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <boby>
+        <header>
+            <div id="logo">
+               <img src="logobp.png"/>
+            </div>
+            <div id="welcome">
+                <h1>BIENVENUE DANS LA BANQUE DU PEUPLE !!</h1>
+            </div>
+        </header>
+        <div>
+            <button><a href="accueil.html">RETOUR A L'ACCUEIL</a></button>
+        </div>
+
+        <form name="ouvertureCompte" action="" method="" onsubmit="">
+            <h1 id="ouCompte">OUVERTURE COMPTE</h1>
+            <div id="btns">
+              <input type="button" value="Nouveau Client" class="btn" id="newclient1">
+              <input type="button" value="Client Existant" class="btn" id="clientexistant1">
+              <div id="search1">
+                <input type="search" name="recherche client" placeholder="ID client">
+                <input type="button" name="bouton de recherche" value="Rechercher">
+              </div>
+            </div>
+        <div id="divform1">
+            <fieldset class="container" id="infosclient">
+                <legend>Informations client</legend>
+                    <div id="infogen">
+                       <label>Nom <input type="text" id="lname" name="nom" class="texte"></label></br>
+                       <label>Prénom <input type="text" id="fname" name="prenom" class="texte"></label></br>
+                       <label>Adresse <input type="text" id="Adress" name="Adresse" class="texte"></label></br>
+                       <label>Téléphone <input type="tel" id="phone" name="telephone" class="texte"></label></br>
+                       <label>Adresse Email <input type="email" id="mail" name="email"></label></br>
+                       <label>N° Carte d'identité <input type="text" id="cin" name="identite"></label></br>
+                       <label>Validité CIN <input type="text" id="validite" name="date validite cin"></label>
+                    </div>   
+                    <div id="infoprof">
+                       <label>Activité <input type="text" id="activite" name="activité client" ></label></br>  
+                    </div>
+            </fieldset>
+    
+            <fieldset class="container" id="infoscompte">
+                <legend>Informations comptes client</legend>
+                    <div id="infocompte">
+                        <select id="typeCompte">
+                            <option value="Type de Compte" selected>Type de Compte</option>
+                            <option value="2">Compte Epargne</option>
+                            <option value="3">Compte Bloqué</option>
+                        </select></br>
+                        <label>Durée de Blocage <input type="text" id="dureeblocage" name="durée de blocage"></label></br>
+                        <label id="numCompte">N° Compte <input type="text" name="numero compte"></label></br>
+                        <label id="cleRib">Clé Rib <input type="text" name="cle rib"></label></br>
+                        <label id="numAgence"> N° Agence <input type="text" name="numero agence"></label></br>
+                        <label>Fais d'ouverture Compte <input type="text" id="frais" name="frais d'ouverture"></label></br>
+                        <select>
+                            <option value="Etat du Compte" selected>Etat du compte</option>
+                            <option value="Actif">Actif</option>
+                            <option value="Bloqué">Bloqué</option>
+                        </select></br>
+                    </div>
+                        <label>Date d'ouverture<em>*</em><input type="date" id="" name="" value="" min="" max=""></label></br> 
+                        <label class="sms"><input type="checkbox" class="sms name="SMS">Recevoir un SMS pour chaque opération sur votre compte </label>   
+            </fieldset>
+            <div id="save">
+                <input type="submit" class="bouton" id="boutonsave" value="Enregistrer" onclick="">
+                <input type="reset" class="bouton" value="Annuler">
+            </div>
+        </div>  
+        </form>
+    <script src="nonsalarie.js"></script>
+     </body>
+</html>
